@@ -1,0 +1,23 @@
+[
+  {
+    "name": "John Doe",
+    "start_date": "Jan,01,2023",
+    "type": "Traditional",
+    "amount": "$5000",
+    "status": "active"
+  },
+  {
+    "name": "Alex Ray",
+    "start_date": "Jan,01,2023",
+    "type": "Traditional",
+    "amount": "$5000",
+    "status": "active"
+  },
+  {
+    "name": "Kate Hunington",
+    "start_date": "Jan,01,2023",
+    "type": "Traditional",
+    "amount": "$5000",
+    "status": "active"
+  }
+]

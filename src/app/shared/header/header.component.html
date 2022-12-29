@@ -1,0 +1,168 @@
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid nav-inner">
+      <a class="navbar-brand">
+        <img src="assets/images/logo.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="togglerSecondExample.toggle()"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        id="navbarTogglerDemo02"
+        mdbCollapse
+        #togglerSecondExample="mdbCollapse"
+      >
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex align-items-start">
+          <li mdbDropdown class="nav-item dropdown text-nowrap d-flex align-items-start">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              <i class="fa-xs fas fa-user ms-3"></i>
+              Contracts
+              <i class="fas fa-angle-down ms-3"></i>
+            </a>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li mdbDropdown class="nav-item dropdown text-nowrap d-flex align-items-center">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink="documents"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              <i class="fa-xs far fa-file-alt ms-3"></i>
+              Documents
+              <i class="fas fa-angle-down ms-3"></i>
+            </a>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li mdbDropdown class="nav-item dropdown text-nowrap d-flex align-items-center">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink="/"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              <i class="fa-xs far fa-credit-card ms-3"></i>
+              Payout
+              <i class="fas fa-angle-down ms-3"></i>
+            </a>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <li mdbDropdown class="nav-item dropdown text-nowrap d-flex align-items-center">
+            <a
+              class="nav-link dropdown-toggle"
+              routerLink="/"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              <i class="fa-xs fas fa-calendar ms-3"></i>
+              Time
+              <i class="fas fa-angle-down ms-3"></i>
+            </a>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="d-flex user w-auto user ps-lg-5">
+          <div mdbDropdown class="dropdown">
+            <a
+              class="nav-link dropdown-toggle d-flex align-items-center justify-content-start"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              <img
+                class="rounded-circle"
+                height="50"
+                alt="Portrait of a Woman"
+                loading="lazy"
+                src="assets/images/user.png"
+                alt="user"
+              />
+              <i class="fa-lg fas fa-angle-down ms-3 text-dark"></i>
+            </a>
+
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

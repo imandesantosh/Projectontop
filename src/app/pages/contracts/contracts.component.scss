@@ -1,0 +1,98 @@
+@import '../../../styles/theme';
+@import '../../../styles/context_menu';
+
+.typehead {
+  font-style: normal;
+  font-weight: 400;
+  color: #1c0b11;
+  .input-group {
+    height: 65px;
+    background: $bgColor;
+    border: 0.5px solid $borderLight;
+    border-radius: 5px;
+  }
+  input,
+  .input-group-text {
+    height: 63px;
+    border: none;
+  }
+  .btn-filter {
+    background: $bglight;
+    border-radius: 5px;
+    border: none;
+    height: 65px;
+  }
+  .btn-hire {
+    background: $highlight;
+    border-radius: 5px;
+    height: 65px;
+    border: none;
+  }
+}
+
+.filters {
+  .btn-cont,
+  .btn-search {
+    height: 40px;
+    background: $bgColor;
+    border: none;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .input-group {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .btn-cutom,
+  .btn-cal {
+    height: 40px;
+    background: $bgColor;
+    border: none;
+    .mat-icon {
+      width: 30px !important;
+      height: 30px !important;
+      vertical-align: initial !important;
+    }
+    .mat-focus-indicator,
+    .mat-icon-button {
+      vertical-align: initial !important;
+      display: none !important;
+    }
+  }
+  .btn-cont:hover,
+  .input-group:hover,
+  .btn-search:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.table-wrap {
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.table-custom {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  .tr:nth-child(even) {
+    background-color: #f9f9f9;
+    height: 37px;
+  }
+  th {
+    color: #000;
+  }
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.section-head > * {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+}
