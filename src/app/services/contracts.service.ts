@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 export class ContractsService {
   constructor(private http: HttpClient) {}
   getContracts() {
-    const url = '../../../assets/data/contracts.json';
+    const url = 'assets/data/contracts.json';
     return this.http.get(url);
   }
 }
