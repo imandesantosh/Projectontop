@@ -53,6 +53,11 @@ nav {
         color: var(--darkGray);
         cursor: pointer;
         padding-bottom: 38px;
+
+      .icon,.text{
+        display: inline-block !important;
+        vertical-align: middle !important;
+      }
       }
       .contact-nav {
         padding-right: 3px;

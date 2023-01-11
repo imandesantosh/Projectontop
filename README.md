@@ -38,3 +38,12 @@ Use the following commands:
 
 - `npm install`
 - `ng serve -o`
+
+## Changes Made by Santosh Ande:
+1. On contracts page, add common border to the input group, so that it looks even good.
+2. Increase width of input box so that all 3 elements occupy full width that row.
+3. Change the position of chatbot icon to move more bottom, so that it looks better.
+4. increase the width of filter button same as create button, so that it looks even.
+5. make width of filter bar to 100% on mobile devices, so that looks evenly aligned with other sections.
+6. adjust the position of chatbot icon to move more right on mobile screen.
+7. Align icons and text centered by making some changes to css, svg icons.
