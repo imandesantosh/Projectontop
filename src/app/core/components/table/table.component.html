@@ -11,17 +11,14 @@
       <tr *ngFor="let data of GridData; index as i">
         <ng-container *ngFor="let key of ColData; index as i">
 
-          <td
-            [ngClass]="[
+          <td [ngClass]="[
               data[key.field] | tableStatusStyle,
               key.field != 'status' ? '' : 'status-style'
-            ]"
-          >
+            ]">
             <span *ngIf="key.field === 'contractorName'" class="image-span">
-              <img [src]="data.imagePath" alt=""
-            /></span>
+              <img [src]="data.imagePath" alt="" /></span>
 
-            <span  [ngClass]="[ key.field != 'status' ? '' : 'status']">
+            <span [ngClass]="[ key.field != 'status' ? '' : 'status']">
               <span class="pointer" *ngIf="key.field === 'status'"> </span>
 
               {{ data[key.field] }}
@@ -29,37 +26,21 @@
 
             <span *ngIf="key.field === 'actions'" class="action-group">
               <div class="dropdown-center">
-                <a
-                  class="dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  (click)="goTo($event)"
-                >
-                  <svg
-                    width="7"
-                    height="35"
-                    viewBox="0 0 7 35"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                  aria-expanded="false" (click)="goTo($event)">
+                  <svg width="7" height="35" viewBox="0 0 7 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="3.5" cy="3.5" r="3.5" fill="#C4C4C4" />
                     <circle cx="3.5" cy="17.5" r="3.5" fill="#C4C4C4" />
                     <circle cx="3.5" cy="31.5" r="3.5" fill="#C4C4C4" />
                   </svg>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li *ngFor="let action of Actions" (click)="$event.preventDefault(); $event.stopPropagation(); action.click(data, action)">
+                  <li *ngFor="let action of Actions"
+                    (click)="$event.preventDefault(); $event.stopPropagation(); action.click(data, action)">
                     <a class="dropdown-item">
-                      <span
-                        ><img
-                          [src]="'../../../../assets/images/' + action.imgUrl"
-                          alt=""
-                        />
+                      <span><img [src]="'../../../../assets/images/' + action.imgUrl" alt="" />
                       </span>
-                      {{ action.name }}</a
-                    >
+                      {{ action.name }}</a>
                   </li>
                 </ul>
               </div>

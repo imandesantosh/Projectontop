@@ -168,7 +168,13 @@
   }
 
   .clear {
-    display: none;
+    display: block;
+    text-align: center;
+    word-break:normal;
+    color: var(--pink);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
   }
 }
 
@@ -197,10 +203,6 @@
   .clear {
     display: block !important;
     text-align: right;
-    color: var(--pink);
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.25px;
   }
 }
 

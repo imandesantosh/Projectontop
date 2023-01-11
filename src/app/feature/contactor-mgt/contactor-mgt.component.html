@@ -9,50 +9,25 @@
       <div class="input-group">
         <div class="input-group-append">
           <span class="input-group-text" id="basic-addon1">
-            <svg
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M16.5769 15.6006H17.6631L24.5244 22.4756L22.4756 24.5244L15.6006 17.6631V16.5769L15.2294 16.1919C13.6619 17.5394 11.6269 18.3506 9.41315 18.3506C4.4769 18.3506 0.475647 14.3494 0.475647 9.41312C0.475647 4.47687 4.4769 0.475616 9.41315 0.475616C14.3494 0.475616 18.3506 4.47687 18.3506 9.41312C18.3506 11.6269 17.5394 13.6619 16.1919 15.2294L16.5769 15.6006ZM3.22567 9.41313C3.22567 12.8369 5.98942 15.6006 9.41317 15.6006C12.8369 15.6006 15.6007 12.8369 15.6007 9.41313C15.6007 5.98938 12.8369 3.22562 9.41317 3.22562C5.98942 3.22562 3.22567 5.98938 3.22567 9.41313Z"
-                fill="#BCBCBC"
-              />
+                fill="#BCBCBC" />
             </svg>
           </span>
         </div>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="Search"
-        />
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="Search" />
       </div>
     </div>
     <div class="side-filter" style="display: flex">
       <div class="filter-btn">
         <a class="btn">
           <span>
-            <svg
-              _ngcontent-ctx-c104=""
-              width="22"
-              height="20"
-              viewBox="0 0 18 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                _ngcontent-ctx-c104=""
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+            <svg _ngcontent-ctx-c104="" width="22" height="20" viewBox="0 0 18 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path _ngcontent-ctx-c104="" fill-rule="evenodd" clip-rule="evenodd"
                 d="M14.2917 7.125H12.375V0.375H14.2917V2.625H18.125V4.875H14.2917V7.125ZM0.875 4.87498V2.62498H10.4583V4.87498H0.875ZM0.875 18.375V16.125H6.625V18.375H0.875ZM10.4583 20.625V18.375H18.125V16.125H10.4583V13.875H8.54167V20.625H10.4583ZM4.70833 9.37498V7.12498H6.625V13.875H4.70833V11.625H0.875V9.37498H4.70833ZM18.125 11.625V9.37504H8.54167V11.625H18.125Z"
-                fill="#1C0B11"
-              ></path>
+                fill="#1C0B11"></path>
             </svg>
           </span>
 
@@ -62,17 +37,10 @@
 
       <div class="create-btn">
         <button class="btn">
-          <svg
-            width="17"
-            height="18"
-            viewBox="0 0 17 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M16.6957 10.3788H9.54037V17.5341H7.15528V10.3788H0V7.99375H7.15528V0.83847H9.54037V7.99375H16.6957V10.3788Z"
-              fill="white"
-            />
+              fill="white" />
           </svg>
           <span style="line-height: 1.7; padding-left: 10px"> New hire </span>
         </button>
@@ -82,17 +50,7 @@
 
   <app-filter-bar></app-filter-bar>
 
-  <app-table
-    class="table"
-    [ColData]="colData"
-    [GridData]="gridData"
-    [Actions]="actions"
-  ></app-table>
+  <app-table class="table" [ColData]="colData" [GridData]="gridData" [Actions]="actions"></app-table>
 
-  <app-card-row
-    class="card-row"
-    [titles]="colData"
-    [Datas]="gridData"
-    [Actions]="actions"
-  ></app-card-row>
+  <app-card-row class="card-row" [titles]="colData" [Datas]="gridData" [Actions]="actions"></app-card-row>
 </div>

@@ -1,76 +1,31 @@
 <div class="card-list mb-4">
   <div class="card-row mb-3 mt-4">
     <div class="cards d-flex flex-sm-row row">
-      <div
-        class="col-md-6 col-sm-12"
-        *ngFor="let data of Datas"
-        style="margin-bottom: 21px"
-      >
+      <div class="col-md-6 col-sm-12" *ngFor="let data of Datas" style="margin-bottom: 21px">
         <ul class="card-body">
           <ng-container *ngFor="let item of titles">
-            <li
-              [ngClass]="[
+            <li [ngClass]="[
                 data[item.field] | tableStatusStyle,
                 item.field != 'status' ? '' : 'status-style'
-              ]"
-              class="main-list"
-            >
+              ]" class="main-list">
               {{ item.header }}
 
               <span *ngIf="item.field === 'actions'" class="action-group">
                 <div class="dropdown-center">
-                  <a
-                    class="dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    (click)="goTo($event)"
-                  >
-                    <svg
-                      width="27"
-                      height="6"
-                      viewBox="0 0 27 6"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle
-                        cx="2.7"
-                        cy="2.6999"
-                        r="2.7"
-                        transform="rotate(-90 2.7 2.6999)"
-                        fill="#C4C4C4"
-                      />
-                      <circle
-                        cx="13.5"
-                        cy="2.6999"
-                        r="2.7"
-                        transform="rotate(-90 13.5 2.6999)"
-                        fill="#C4C4C4"
-                      />
-                      <circle
-                        cx="24.3"
-                        cy="2.6999"
-                        r="2.7"
-                        transform="rotate(-90 24.3 2.6999)"
-                        fill="#C4C4C4"
-                      />
+                  <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                    aria-expanded="false" (click)="goTo($event)">
+                    <svg width="27" height="6" viewBox="0 0 27 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="2.7" cy="2.6999" r="2.7" transform="rotate(-90 2.7 2.6999)" fill="#C4C4C4" />
+                      <circle cx="13.5" cy="2.6999" r="2.7" transform="rotate(-90 13.5 2.6999)" fill="#C4C4C4" />
+                      <circle cx="24.3" cy="2.6999" r="2.7" transform="rotate(-90 24.3 2.6999)" fill="#C4C4C4" />
                     </svg>
                   </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li *ngFor="let action of Actions">
                       <a class="dropdown-item">
-                        <span
-                          ><img
-                            [src]="'../../../../assets/images/' + action.imgUrl"
-                            alt=""
-                          />
+                        <span><img [src]="'../../../../assets/images/' + action.imgUrl" alt="" />
                         </span>
-                        {{ action.name }}</a
-                      >
+                        {{ action.name }}</a>
                     </li>
                   </ul>
                 </div>
