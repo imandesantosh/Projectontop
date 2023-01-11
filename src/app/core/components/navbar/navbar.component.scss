@@ -67,7 +67,10 @@ nav {
       }
       .nav-item.active {
         a {
-          color: var(--pink);
+          span{
+            color: var(--pink);
+            background:none !important;
+          }
 
           border-bottom: 6px solid var(--pink);
         }
